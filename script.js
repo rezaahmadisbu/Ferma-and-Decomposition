@@ -148,6 +148,25 @@ else if (Number.isInteger(Math.sqrt(y10)))
   console.log("n = " + z10 + "*" + t10)
 }
 
+console.log("------------Decomposition is -----------")
+// ---------------------------------------------------
 
+function primeFactors(a) {
+  const factors = [];
+  let divisor = 2;
+
+  while (a >= 2) {
+    if (a % divisor == 0) {
+      factors.push(divisor);
+      a = a / divisor;
+    } else {
+      divisor++;
+    }
+  }
+  return factors;
+}
+
+const randomNumber = Math.floor(Math.random() * 10000);
+console.log('Prime factors of', randomNumber + ':', primeFactors(randomNumber).join(' '))
 
 
