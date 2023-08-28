@@ -2,7 +2,7 @@ var a =Number(prompt("Enter n"));
 console.log("n = " + a)
 
 var b=Math.floor(Math.sqrt(a))
- console.log("r =" + b);
+ console.log("r ===" + b);
 
 
 var x1=b+1
